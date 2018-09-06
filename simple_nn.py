@@ -105,7 +105,6 @@ def gauss_2d():
 def main():
     # define parameters
     input_shape = [1024,512,1]
-    output_shape = [64,64]
    
     #y_train = []
     #for i in range(num_train):
@@ -117,7 +116,6 @@ def main():
 
     # define model
     model = nn_model(input_shape, output_shape)
-    exit()
 
     # train model
     model, hist, eval_results, preds = run_cnn(model, x_train, y_train, x_val, y_val, x_test, y_test)
